@@ -75,8 +75,8 @@ const generateMarkdown = ({
   ${projectTest}
   ## Questions <a name="questions"></a>
   If you have any questions or would like to contact me, please use one of the two below methods:\n
-  http://www.github.com/${projectGithub}\n
-  ${projectEmail}`;
+  Github: http://www.github.com/${projectGithub}\n
+  Email: ${projectEmail}`;
 };
 
 module.exports = generateMarkdown;
