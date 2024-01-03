@@ -52,22 +52,28 @@ const generateMarkdown = ({
 }) => {
   const badge = renderLicenseBadge(projectLicense);
   const licenseLink = renderLicenseLink(projectLicense);
-  return `## ${projectTitle} 
+  return `# ${projectTitle} 
   ## Description
   ${projectDescription}
   ## Table of Contents
-  ## Installation
+  1. [Installation](#installation)
+  2. [Usage](#usage)
+  3. [License](#license)
+  4. [Contribute](#contribute)
+  5. [Testing](#tests)
+  6. [Questions](#questions)
+  ## Installation <a name="installation"></a>
   ${projectInstall}
-  ## Usage
+  ## Usage <a name="usage"></a>
   ${projectUsage}
-  ## License
+  ## License <a name="license"></a>
   ${badge}\n
   This project is covered under the ${projectLicense} license: ${licenseLink}
-  ## How to Contribute
+  ## How to Contribute <a name="contribute"></a>
   ${projectContrib}
-  ## Tests
+  ## Tests <a name="tests"></a>
   ${projectTest}
-  ## Questions
+  ## Questions <a name="questions"></a>
   If you have any questions or would like to contact me, please use one of the two below methods:\n
   http://www.github.com/${projectGithub}\n
   ${projectEmail}`;
