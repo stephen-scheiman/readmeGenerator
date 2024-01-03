@@ -1,30 +1,44 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// A function that returns a license badge based on which license is passed in
 function renderLicenseBadge(projectLicense) {
-  console.log(projectLicense);
   if (projectLicense === "Gnu GPL") {
     const badge = `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`;
+    return badge;
   } else if (projectLicense === "Apache") {
     const badge = `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
+    return badge;
   } else if (projectLicense === "MIT") {
     const badge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
+    return badge;
   } else if (projectLicense === "BSD") {
     const badge = `[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)`;
+    return badge;
   } else {
-    return "";
+    const badge = "";
+    return badge;
   }
-  return badge;
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(projectLicense) {}
+// A function that returns the license link
+function renderLicenseLink(projectLicense) {
+  if (projectLicense === "Gnu GPL") {
+    const licenseLink = `https://www.gnu.org/licenses/gpl-3.0`;
+    return licenseLink;
+  } else if (projectLicense === "Apache") {
+    const licenseLink = `https://opensource.org/licenses/Apache-2.0`;
+    return licenseLink;
+  } else if (projectLicense === "MIT") {
+    const licenseLink = `https://opensource.org/licenses/MIT`;
+    return licenseLink;
+  } else if (projectLicense === "BSD") {
+    const licenseLink = `https://opensource.org/licenses/BSD-3-Clause`;
+    return licenseLink;
+  } else {
+    const licenseLink = "";
+    return licenseLink;
+  }
+}
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(projectLicense) {}
-
-// TODO: Create a function to generate markdown for README
+// A function to generate markdown for README
 const generateMarkdown = ({
   projectTitle,
   projectDescription,
@@ -35,9 +49,10 @@ const generateMarkdown = ({
   projectTest,
   projectGithub,
   projectEmail,
-  badge,
 }) => {
-  return `## ${projectTitle} ${badge}
+  const badge = renderLicenseBadge(projectLicense);
+  const licenseLink = renderLicenseLink(projectLicense);
+  return `## ${projectTitle} 
   ## Description
   ${projectDescription}
   ## Table of Contents
@@ -46,7 +61,8 @@ const generateMarkdown = ({
   ## Usage
   ${projectUsage}
   ## License
-  This project is covered under the ${projectLicense} license
+  ${badge}\n
+  This project is covered under the ${projectLicense} license: ${licenseLink}
   ## How to Contribute
   ${projectContrib}
   ## Tests

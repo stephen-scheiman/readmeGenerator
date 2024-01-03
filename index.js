@@ -55,8 +55,7 @@ const questions = inquirer
 ])
 .then((answer) => {
     const markdownCode = generateMarkdown(answer);
-    console.log(markdownCode);
-    writeToFile("README.md", markdownCode)
+    writeToFile("README.md", markdownCode);
 });
 
 // // TODO: Create a function to write README file
