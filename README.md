@@ -1,6 +1,6 @@
-# README Generator 
+# Chicken Feet 
   ## Description
-  This is a long sentence
+  Self explanatory
   ## Table of Contents
   1. [Installation](#installation)
   2. [Usage](#usage)
@@ -9,17 +9,17 @@
   5. [Testing](#tests)
   6. [Questions](#questions)
   ## Installation <a name="installation"></a>
-  There are none
+  Put the feet in the mouth
   ## Usage <a name="usage"></a>
-  Carefully
+  Under adult supervision
   ## License <a name="license"></a>
-  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-  This project is covered under the Gnu GPL license: https://www.gnu.org/licenses/gpl-3.0
+  This project is covered under the MIT license: https://opensource.org/licenses/MIT
   ## How to Contribute <a name="contribute"></a>
-  They may not
-  ## Tests <a name="tests"></a>
-  Test carefully
+  Contact me
+  ## Testing <a name="tests"></a>
+  run 'node index.js' and check README.md
   ## Questions <a name="questions"></a>
   If you have any questions or would like to contact me, please use one of the two below methods:
 

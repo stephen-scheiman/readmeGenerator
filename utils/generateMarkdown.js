@@ -71,7 +71,7 @@ const generateMarkdown = ({
   This project is covered under the ${projectLicense} license: ${licenseLink}
   ## How to Contribute <a name="contribute"></a>
   ${projectContrib}
-  ## Tests <a name="tests"></a>
+  ## Testing <a name="tests"></a>
   ${projectTest}
   ## Questions <a name="questions"></a>
   If you have any questions or would like to contact me, please use one of the two below methods:\n
