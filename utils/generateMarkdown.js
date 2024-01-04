@@ -52,7 +52,8 @@ const generateMarkdown = ({
 }) => {
   const badge = renderLicenseBadge(projectLicense);
   const licenseLink = renderLicenseLink(projectLicense);
-  return `# ${projectTitle} 
+  return `${badge}\n
+  # ${projectTitle} 
   ## Description
   ${projectDescription}
   ## Table of Contents
@@ -67,7 +68,6 @@ const generateMarkdown = ({
   ## Usage <a name="usage"></a>
   ${projectUsage}
   ## License <a name="license"></a>
-  ${badge}\n
   This project is covered under the ${projectLicense} license: ${licenseLink}
   ## How to Contribute <a name="contribute"></a>
   ${projectContrib}
@@ -75,8 +75,8 @@ const generateMarkdown = ({
   ${projectTest}
   ## Questions <a name="questions"></a>
   If you have any questions or would like to contact me, please use one of the two below methods:\n
-  Github: http://www.github.com/${projectGithub}\n
-  Email: ${projectEmail}`;
+  github: http://www.github.com/${projectGithub}\n
+  email: ${projectEmail}`;
 };
 
 module.exports = generateMarkdown;
