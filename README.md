@@ -14,6 +14,8 @@
   To install, clone the repo to local storage. The application requires that both the “fs” and “inquirer” packages be downloaded. Please run: ‘npm i fs’ and ’npm i inquirer’ in your terminal before attempting to run the application.
   ## Usage <a name="usage"></a>
   In order to run the application, please run ‘node index.js’ in your local repository. The application will then prompt you with a series of questions that will provide the input to the README file’s various sections.
+
+  For a video demonstration of this application, please see the following link: https://drive.google.com/file/d/1M8zGaerA1v9yCO_-ji2_iFJ6yFBzkBsI/view 
   ## License <a name="license"></a>
   This project is covered under the BSD license: https://opensource.org/licenses/BSD-3-Clause
   ## How to Contribute <a name="contribute"></a>
